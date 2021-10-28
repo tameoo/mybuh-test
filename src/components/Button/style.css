@@ -1,0 +1,37 @@
+.btn {
+  padding: 17px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cancel-btn {
+  background: #f4f5f9;
+  color: #676767;
+  border: 1px solid #f4f5f9;
+}
+
+.save-btn {
+  background: #2782ee;
+  color: #fff;
+  border: 1px solid #2782ee;
+}
+
+.cancel-btn:hover {
+  background: #676767;
+  color: #fff;
+}
+
+.save-btn:hover {
+  color: #2782ee;
+  background: transparent;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}

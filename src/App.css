@@ -1,0 +1,15 @@
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 30px 0px;
+}
+
+.btn-group {
+  display: flex;
+  column-gap: 15px;
+}

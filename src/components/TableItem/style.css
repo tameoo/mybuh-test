@@ -1,0 +1,87 @@
+.table-item {
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+}
+
+.table-item li {
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  word-break: break-word;
+  padding: 17px 25px;
+}
+
+.table-item li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #e3e3e3;
+  right: 0;
+  top: 0;
+}
+
+.table-item li:last-child::after {
+  width: 0;
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.edit-btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2782ee;
+  user-select: none;
+  cursor: pointer;
+}
+
+.add-salary {
+  display: block;
+  padding: 17px 0px 18px 25px;
+}
+
+.delete {
+  color: #f44343;
+}
+
+.item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.salary {
+  padding: 0 !important;
+}
+
+.salary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 17px 22px 10px 25px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.salary-container img {
+  cursor: pointer;
+}
+
+.detail span {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.detail p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #999999;
+}

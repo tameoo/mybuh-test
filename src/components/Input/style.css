@@ -1,0 +1,41 @@
+.input-controll {
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #e4e6e8;
+  border-radius: 10px;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+.input-label {
+  position: absolute;
+  color: #676767;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: text;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  transition: all 0.2s ease;
+}
+
+.text-input:focus + .input-label,
+:not(:placeholder-shown) + .input-label {
+  top: -10px;
+  font-size: 14px;
+  color: #2782ee;
+}
+
+.text-input:focus {
+  border: 1px solid #2782ee;
+}
